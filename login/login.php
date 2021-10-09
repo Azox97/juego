@@ -21,12 +21,15 @@
                 <span></span>
                 <label>Contraseña</label>
             </div>
-            <div class="pass">¿Olvidaste la Contraseña?</div>
+           <div class="pass">¿Olvidaste la Contraseña?</div>
             <input type="submit" value="Login">
             <div class="register_link">
                 ¿No eres miembro? <a href="#">Resgistrate</a>
             </div>
         </form>
     </div>
+    <?php
+        header("Location: index.php");
+    ?>
 </body>
 </html>

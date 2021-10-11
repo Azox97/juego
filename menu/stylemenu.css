@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+    width: 100%;
+    color: #fff;
+}
+
+nav {
+    background-color: rgb(160, 158, 156);
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    width: 100%;
+}

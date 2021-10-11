@@ -26,29 +26,57 @@ class Equipo{
 
 class espada extends Equipo{
 
-    public = ;
-    public = ;
+    public = $corte ;
+    public = $material;
+
+    function __construct($id="", $name="",$age="",$dimension_length="",$dimension_width="",$weigth="",$image="",$icon="",$description="",$material="",$corte=""){
+        parent::__construct($id,$name,$age,$dimension_length,$dimension_width,$weigth,$image,$icon,$description);
+
+        $this->corte = $corte;
+        $this->material = $material;
+    }
 
 }
 
 class Arco extends Equipo{
 
-    public = ;
-    public = ;
+    public = $Madera;
+    public = $rango;
+
+    function __construct($id="", $name="",$age="",$dimension_length="",$dimension_width="",$weigth="",$image="",$icon="",$description=""){
+        parent::__construct($id,$name,$age,$dimension_length,$dimension_width,$weigth,$image,$icon,$description);
+
+        $this->Madera = $Madera;
+        $this->rango = $rango;
+    }
 
 }
 
 class Hacha extends Equipo{
 
-    public = ;
-    public = ;
+    public = $RompeArmaduras;
+    public = $durabilidad;
+
+    function __construct($id="", $name="",$age="",$dimension_length="",$dimension_width="",$weigth="",$image="",$icon="",$description=""){
+        parent::__construct($id,$name,$age,$dimension_length,$dimension_width,$weigth,$image,$icon,$description);
+
+        $this->RompeArmaduras = $RompeArmaduras;
+        $this->durabilidad = $durabilidad;
+    }
 
 }
 
 class Lanza extends Equipo{
 
-    public = ;
-    public = ;
+    public = $alcance;
+    public = $perforacion;
+
+    function __construct($id="", $name="",$age="",$dimension_length="",$dimension_width="",$weigth="",$image="",$icon="",$description=""){
+        parent::__construct($id,$name,$age,$dimension_length,$dimension_width,$weigth,$image,$icon,$description);
+
+        $this->alcance = $alcance;
+        $this->perforacion = $perforacion;
+    }
 
 }
 

@@ -25,8 +25,6 @@
 
     $perArray = json_decode($per_json);
 
-    $lista = array();
-
     foreach($perArray as $f) {
             if ("Orco" == $f->tipo){
                 $obj = new Orco($f->id,$f->nombre,$f->dni,$f->altura,$f->peso,$f->imagen,$f->icono,$f->descripcion,$f->fuerza,$f->inteligencia);
@@ -100,7 +98,22 @@
 </tbody>
 </table>
 <br><br><br><br>
-
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Dni</th>
+            <th>altura</th>
+            <th>peso</th>
+            <th>imagen</th>
+            <th>icono</th>
+            <th>descripcion</th>
+            <th>Raza</th>
+            <th>Característica 1</th>
+            <th>Característica 2</th>
+        </tr>
+    </thead>
 <?php
 
 include "../datos/Class_Equipamiento.php";
@@ -108,8 +121,6 @@ include "../datos/Class_Equipamiento.php";
 $per_json = file_get_contents("../datos/json_equipamiento.json");
 
 $perArray = json_decode($per_json);
-
-$lista = array();
 
 foreach($perArray as $f) {
         if ("espada" == $f->tipo){
@@ -184,3 +195,6 @@ foreach($perArray as $f) {
 }
 
 ?>
+<tbody>
+</tbody>
+</table>

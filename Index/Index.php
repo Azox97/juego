@@ -1,7 +1,10 @@
+<link rel="stylesheet" href="../css/tablas.css">
+
 <?php
     require_once '../menuypiepag/menu.php';
     
 ?>
+<h1>Personajes</h1>
 <table>
     <thead>
         <tr>
@@ -97,7 +100,7 @@
 <tbody>
 </tbody>
 </table>
-<br><br><br><br>
+<h2>Equipamiento</h2>
 <table>
     <thead>
         <tr>

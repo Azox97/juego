@@ -13,6 +13,7 @@ nav ul {
 nav {
     background-color: rgb(160, 158, 156);
     text-align: center;
+    padding: 10px;
 }
 
 nav li {

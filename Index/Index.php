@@ -37,8 +37,8 @@
                 echo "<td>" . $obj->dni . "</td>";
                 echo "<td>" . $obj->altura . "</td>";
                 echo "<td>" . $obj->peso . "</td>";
-                echo "<td>" . $obj->imagen . "</td>";
-                echo "<td>" . $obj->icono . "</td>";
+                echo "<td><img src='" . $obj->imagen . "'></td>";
+                echo "<td><img src='" . $obj->icono . "'></td>";
                 echo "<td>" . $obj->descripcion . "</td>";
                 echo "<td> Orco </td>";
                 echo "<td>Fuerza: " . $obj->fuerza . "</td>";
@@ -53,8 +53,8 @@
                 echo "<td>" . $obj->dni . "</td>";
                 echo "<td>" . $obj->altura . "</td>";
                 echo "<td>" . $obj->peso . "</td>";
-                echo "<td>" . $obj->imagen . "</td>";
-                echo "<td>" . $obj->icono . "</td>";
+                echo "<td><img src='" . $obj->imagen . "'></td>";
+                echo "<td><img src='" . $obj->icono . "'></td>";
                 echo "<td>" . $obj->descripcion . "</td>";
                 echo "<td> Elfo </td>";
                 echo "<td>Habitat: " . $obj->habitat . "</td>";
@@ -69,8 +69,8 @@
                 echo "<td>" . $obj->dni . "</td>";
                 echo "<td>" . $obj->altura . "</td>";
                 echo "<td>" . $obj->peso . "</td>";
-                echo "<td>" . $obj->imagen . "</td>";
-                echo "<td>" . $obj->icono . "</td>";
+                echo "<td><img src='" . $obj->imagen . "'></td>";
+                echo "<td><img src='" . $obj->icono . "'></td>";
                 echo "<td>" . $obj->descripcion . "</td>";
                 echo "<td> Hombre </td>";
                 echo "<td>Color de pelo: " . $obj->color_pelo . "</td>";
@@ -85,8 +85,8 @@
                 echo "<td>" . $obj->dni . "</td>";
                 echo "<td>" . $obj->altura . "</td>";
                 echo "<td>" . $obj->peso . "</td>";
-                echo "<td>" . $obj->imagen . "</td>";
-                echo "<td>" . $obj->icono . "</td>";
+                echo "<td><img src='" . $obj->imagen . "'></td>";
+                echo "<td><img src='" . $obj->icono . "'></td>";
                 echo "<td>" . $obj->descripcion . "</td>";
                 echo "<td> Enano </td>";
                 echo "<td>Dinastia: " . $obj->dinastia . "</td>";

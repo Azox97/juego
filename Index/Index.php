@@ -125,14 +125,16 @@ include "../datos/Class_Equipamiento.php";
 $per_json = file_get_contents("../datos/json_equipamiento.json");
 
 $perArray = json_decode($per_json);
-
+$hoy = date("Y");
 foreach($perArray as $f) {
+        $fecha = date("Y",strtotime($f->antiguedad));
+        $ant = $hoy - $fecha;
         if ("espada" == $f->tipo){
             $obj = new Espada($f->id,$f->nombre,$f->antiguedad,$f->dimension_largo,$f->dimension_ancho,$f->peso,$f->imagen,$f->icono,$f->descripcion,$f->corte,$f->material);
             echo "<tr>";
             echo "<td>" . $obj->id . "</td>";
             echo "<td>" . $obj->nombre . "</td>";
-            echo "<td>" . $obj->antiguedad . "</td>";
+            echo "<td>" . $ant . " años</td>";
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
@@ -149,7 +151,7 @@ foreach($perArray as $f) {
             echo "<tr>";
             echo "<td>" . $obj->id . "</td>";
             echo "<td>" . $obj->nombre . "</td>";
-            echo "<td>" . $obj->antiguedad . "</td>";
+            echo "<td>" . $ant . " años</td>";
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
@@ -166,7 +168,7 @@ foreach($perArray as $f) {
             echo "<tr>";
             echo "<td>" . $obj->id . "</td>";
             echo "<td>" . $obj->nombre . "</td>";
-            echo "<td>" . $obj->antiguedad . "</td>";
+            echo "<td>" . $ant . " años</td>";
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
@@ -183,7 +185,7 @@ foreach($perArray as $f) {
             echo "<tr>";
             echo "<td>" . $obj->id . "</td>";
             echo "<td>" . $obj->nombre . "</td>";
-            echo "<td>" . $obj->antiguedad . "</td>";
+            echo "<td>" . $ant . " años</td>";
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";

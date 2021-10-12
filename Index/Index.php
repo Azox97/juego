@@ -138,8 +138,8 @@ foreach($perArray as $f) {
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
-            echo "<td>" . $obj->imagen . "</td>";
-            echo "<td>" . $obj->icono . "</td>";
+            echo "<td><img src='" . $obj->imagen . "'></td>";
+            echo "<td><img src='" . $obj->icono . "'></td>";
             echo "<td>" . $obj->descripcion . "</td>";
             echo "<td> Espada </td>";
             echo "<td>Corte: " . $obj->corte . "</td>";
@@ -155,8 +155,8 @@ foreach($perArray as $f) {
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
-            echo "<td>" . $obj->imagen . "</td>";
-            echo "<td>" . $obj->icono . "</td>";
+            echo "<td><img src='" . $obj->imagen . "'></td>";
+            echo "<td><img src='" . $obj->icono . "'></td>";
             echo "<td>" . $obj->descripcion . "</td>";
             echo "<td> Arco </td>";
             echo "<td>Madera: " . $obj->Madera . "</td>";
@@ -172,8 +172,8 @@ foreach($perArray as $f) {
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
-            echo "<td>" . $obj->imagen . "</td>";
-            echo "<td>" . $obj->icono . "</td>";
+            echo "<td><img src='" . $obj->imagen . "'></td>";
+            echo "<td><img src='" . $obj->icono . "'></td>";
             echo "<td>" . $obj->descripcion . "</td>";
             echo "<td> Hacha </td>";
             echo "<td>RompeArmaduras: " . $obj->RompeArmaduras . "</td>";
@@ -189,8 +189,8 @@ foreach($perArray as $f) {
             echo "<td>" . $obj->dimension_largo . "</td>";
             echo "<td>" . $obj->dimension_ancho . "</td>";
             echo "<td>" . $obj->peso . "</td>";
-            echo "<td>" . $obj->imagen . "</td>";
-            echo "<td>" . $obj->icono . "</td>";
+            echo "<td><img src='" . $obj->imagen . "'></td>";
+            echo "<td><img src='" . $obj->icono . "'></td>";
             echo "<td>" . $obj->descripcion . "</td>";
             echo "<td> Lanza </td>";
             echo "<td>Alcance: " . $obj->alcance . "</td>";

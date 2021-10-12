@@ -39,7 +39,7 @@
     "icono":"",
     "descripcion":"Arco de largo alcance",
     "tipo":"arco",
-    "madera":"roble",
+    "Madera":"roble",
     "rango":"500m de rango"
     
   },
@@ -54,7 +54,7 @@
     "icono":"",
     "descripcion":"Golpea primero pregunta luego mas tarde",
     "tipo":"hacha",
-    "RompeAemaduras":"las armaduras son de papel?",
+    "RompeArmaduras":"las armaduras son de papel?",
     "durabilidad":"300 de durabilidad"
   }
 ]

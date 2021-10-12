@@ -12,7 +12,7 @@
         <h1>Login</h1>
         <form method="post">
             <div class="camptext">
-                <input type="text" name="usname" required>
+                <input type="text" required>
                 <span></span>
                 <label>Usuario</label>
             </div>
@@ -29,6 +29,7 @@
         </form>
     </div>
     <?php
+
        if ($_SERVER["REQUEST_METHOD"] == "POST") {  
         $user=false;
         if(strcmp($_POST['usname'],"usuario")===0 && strcmp($_POST['pass'], "1234") === 0) {

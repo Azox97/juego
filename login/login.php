@@ -29,10 +29,13 @@
         </form>
     </div>
     <?php
-        $user = $_POST['usname'];
-        $password = $_POST['pass'];
-        
-        header("Location: index.php");
+       if ($_SERVER["REQUEST_METHOD"] == "POST") {  
+        $user=false;
+        if(strcmp($_POST['usname'],"usuario")===0 && strcmp($_POST['pass'], "1234") === 0) {
+          $user=true;
+          header("Location: Index.php");
+        }
+      }
     ?>
 </body>
 </html>

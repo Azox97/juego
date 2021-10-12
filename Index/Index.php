@@ -8,11 +8,11 @@
             <th>Id</th>
             <th>Nombre</th>
             <th>Dni</th>
-            <th>altura</th>
-            <th>peso</th>
-            <th>imagen</th>
-            <th>icono</th>
-            <th>descripcion</th>
+            <th>Altura</th>
+            <th>Peso</th>
+            <th>Imagen</th>
+            <th>Icono</th>
+            <th>Descripcion</th>
             <th>Raza</th>
             <th>Característica 1</th>
             <th>Característica 2</th>
@@ -103,13 +103,14 @@
         <tr>
             <th>Id</th>
             <th>Nombre</th>
-            <th>Dni</th>
-            <th>altura</th>
-            <th>peso</th>
-            <th>imagen</th>
-            <th>icono</th>
-            <th>descripcion</th>
-            <th>Raza</th>
+            <th>Antigüedad</th>
+            <th>Dimendion de largo</th>
+            <th>Dimension de ancho</th>
+            <th>Peso</th>
+            <th>Imagen</th>
+            <th>Icono</th>
+            <th>Descripcion</th>
+            <th>Tipo</th>
             <th>Característica 1</th>
             <th>Característica 2</th>
         </tr>
@@ -124,7 +125,7 @@ $perArray = json_decode($per_json);
 
 foreach($perArray as $f) {
         if ("espada" == $f->tipo){
-            $obj = new Espada($f->id,$f->nombre,$f->antiguedad,$f->dimension_largo,$f->dimension_ancho,$f->peso,$f->imagen,$f->icono,.$f->descripcion,$f->corte,$f->material);
+            $obj = new Espada($f->id,$f->nombre,$f->antiguedad,$f->dimension_largo,$f->dimension_ancho,$f->peso,$f->imagen,$f->icono,$f->descripcion,$f->corte,$f->material);
             echo "<tr>";
             echo "<td>" . $obj->id . "</td>";
             echo "<td>" . $obj->nombre . "</td>";

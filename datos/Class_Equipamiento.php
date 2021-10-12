@@ -1,15 +1,15 @@
 <?php
 
 class Equipo{
-    public = $id;
-    public = $nombre; 
-    public = $antiguedad;  
-    public = $dimension_largo; 
-    public = $dimension_ancho;  
-    public = $peso;   
-    public = $imagen;    
-    public = $icono;     
-    public = $descripcion;  
+    public $id;
+    public $nombre; 
+    public $antiguedad;  
+    public $dimension_largo; 
+    public $dimension_ancho;  
+    public $peso;   
+    public $imagen;    
+    public $icono;     
+    public $descripcion;  
 
     function __construct($id="", $nombre="",$antiguedad="",$dimension_largo="",$dimension_ancho="",$peso="",$imagen="",$icono="",$descripcion=""){
         $this->id = $id;
@@ -17,7 +17,7 @@ class Equipo{
         $this->antiguedad = $antiguedad;
         $this->dimension_largo = $dimension_largo;
         $this->dimension_ancho = $dimension_ancho;
-        $this->weight = $peso;
+        $this->peso = $peso;
         $this->imagen = $imagen;
         $this->icono = $icono;
         $this->descripcion = $descripcion;
@@ -26,8 +26,8 @@ class Equipo{
 
 class Espada extends Equipo{
 
-    public = $corte ;
-    public = $material;
+    public $corte ;
+    public $material;
 
     function __construct($id="", $nombre="",$antiguedad="",$dimension_largo="",$dimension_ancho="",$peso="",$imagen="",$icono="",$descripcion="",$material="",$corte=""){
         parent::__construct($id,$nombre,$antiguedad,$dimension_largo,$dimension_ancho,$peso,$imagen,$icono,$descripcion);
@@ -40,8 +40,8 @@ class Espada extends Equipo{
 
 class Arco extends Equipo{
 
-    public = $Madera;
-    public = $rango;
+    public $Madera;
+    public $rango;
 
     function __construct($id="", $nombre="",$antiguedad="",$dimension_largo="",$dimension_ancho="",$peso="",$imagen="",$icono="",$descripcion=""){
         parent::__construct($id,$nombre,$antiguedad,$dimension_largo,$dimension_ancho,$peso,$imagen,$icono,$descripcion);
@@ -54,8 +54,8 @@ class Arco extends Equipo{
 
 class Hacha extends Equipo{
 
-    public = $RompeArmaduras;
-    public = $durabilidad;
+    public $RompeArmaduras;
+    public $durabilidad;
 
     function __construct($id="", $nombre="",$antiguedad="",$dimension_largo="",$dimension_ancho="",$peso="",$imagen="",$icono="",$descripcion=""){
         parent::__construct($id,$nombre,$antiguedad,$dimension_largo,$dimension_ancho,$peso,$imagen,$icono,$descripcion);
@@ -68,8 +68,8 @@ class Hacha extends Equipo{
 
 class Lanza extends Equipo{
 
-    public = $alcance;
-    public = $perforacion;
+    public $alcance;
+    public $perforacion;
 
     function __construct($id="", $nombre="",$antiguedad="",$dimension_largo="",$dimension_ancho="",$peso="",$imagen="",$icono="",$descripcion=""){
         parent::__construct($id,$nombre,$antiguedad,$dimension_largo,$dimension_ancho,$peso,$imagen,$icono,$descripcion);

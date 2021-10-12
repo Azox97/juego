@@ -1,5 +1,5 @@
 <?php
-    require_once '../menu/menu.php';
+    require_once '../menuypiepag/menu.php';
     
 ?>
 <table>
@@ -199,3 +199,6 @@ foreach($perArray as $f) {
 <tbody>
 </tbody>
 </table>
+<?php
+    require_once '../menuypiepag/pie.php';
+?>

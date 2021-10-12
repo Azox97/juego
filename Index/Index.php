@@ -164,7 +164,7 @@ foreach($perArray as $f) {
             echo "</tr>";
         }
         if ("lanza" == $f->tipo){
-            $obj = new Lanza($f->id,$f->nombre,$f->antiguedad,$f->dimension_largo,$f->dimension_ancho,$f->peso,$f->imagen,$f->icono,$f->dinastia,$f->clan);
+            $obj = new Lanza($f->id,$f->nombre,$f->antiguedad,$f->dimension_largo,$f->dimension_ancho,$f->peso,$f->imagen,$f->icono,$f->descripcion,$f->alcance,$f->perforacion);
             echo "<tr>";
             echo "<td>" . $obj->id . "</td>";
             echo "<td>" . $obj->nombre . "</td>";
@@ -174,9 +174,10 @@ foreach($perArray as $f) {
             echo "<td>" . $obj->peso . "</td>";
             echo "<td>" . $obj->imagen . "</td>";
             echo "<td>" . $obj->icono . "</td>";
-            echo "<td> Enano </td>";
-            echo "<td>Dinastia: " . $obj->dinastia . "</td>";
-            echo "<td>Clan: " . $obj->clan . "</td>"; 
+            echo "<td>" . $obj->descripcion . "</td>";
+            echo "<td> Lanza </td>";
+            echo "<td>Alcance: " . $obj->alcance . "</td>";
+            echo "<td>Prforacion: " . $obj->perforacion . "</td>"; 
             echo "</tr>";
         }
         

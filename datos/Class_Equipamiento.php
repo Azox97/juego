@@ -24,7 +24,7 @@ class Equipo{
     }
 }
 
-class spada extends Equipo{
+class Espada extends Equipo{
 
     public = $corte ;
     public = $material;

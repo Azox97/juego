@@ -29,7 +29,13 @@
         </form>
     </div>
     <?php
-        header("Location: index.php");
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {  
+            $user=false;
+            if(strcmp($_POST['usname'],"usuario1")===0 && strcmp($_POST['pass'], "1") === 0) {
+              $user=true;
+              header("Location: Index.php");
+            }
+          }
     ?>
 </body>
 </html>

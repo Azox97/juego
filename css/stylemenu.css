@@ -7,7 +7,7 @@ nav ul {
     list-style: none;
     display: inline;
     width: 100%;
-    color: #fff;
+    
 }
 
 nav {
@@ -18,4 +18,8 @@ nav {
 nav li {
     display: inline;
     width: 100%;
+    padding: 10px;
+}
+a{
+    color: #fff;
 }

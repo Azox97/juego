@@ -7,15 +7,20 @@ nav ul {
     list-style: none;
     display: inline;
     width: 100%;
-    color: #fff;
+    
 }
 
 nav {
     background-color: rgb(160, 158, 156);
     text-align: center;
+    padding: 10px;
 }
 
 nav li {
     display: inline;
     width: 100%;
+    padding: 10px;
+}
+a{
+    color: #fff;
 }

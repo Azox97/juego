@@ -57,7 +57,7 @@
         }
     }
     
-    class Enanos extends Personajes{
+    class Enano extends Personajes{
         public $dinastia;
         public $clan;
 
